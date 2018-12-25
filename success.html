@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abeed-task</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="row m-5">
+<div class="col-sm-3 bg-light">
+    <form class="p-5 font-weight-bold text-warning" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+        <label class="text-center pb-2 text-dark">EMPLOYEE DATA</label><br>
+        <div>
+            <label>Student ID</label>
+            <input class="form-control m-2 text-center" type="number"  id="username">
+        </div>
+        <div>
+            <label>Student Name</label>
+            <input class="form-control m-2 text-center" type="text"  id="number">
+        </div>
+        <div>
+            <label>Email</label>
+            <input class="form-control m-2 text-center" type="email" name="" id="money">
+        </div>
+        <div>
+            <label>Class</label>
+            <input class="form-control m-2 text-center" type="text" name="" id="from">
+
+        </div>
+        <div>
+            <label>Enrolment Year</label>
+            <input class="form-control m-2 text-center" type="number" name="" id="section">
+        </div>
+        <div>
+            <label>City</label>
+            <input class="form-control m-2 text-center" type="text" name="" id="city">
+        </div>
+        <div>
+            <label>Country</label>
+            <input class="form-control m-2 text-center" type="text" name="" id="country">
+        </div>
+        <div>
+            <input c type="submit" class="btn btn-light-blue" value="SAVE">
+        </div>
+        <div>
+            <a class="btn btn-blue-grey">CANCEL</a>
+        </div>
+    </form>
+</div>
+    <div class=" col-sm-9 ">
+    <table class=" table   text-white text-center" id="employeelist">
+        <thead class="item head tab-content bg-dark">
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Email</th>
+        <th>Class</th>
+        <th>Enrolment Year</th>
+        <th>city</th>
+        <th>country</th>
+        <th>Edite</th>
+        <th>Delete</th>
+        </thead>
+        <tbody class="bg-secondary" id="submited">
+        </tbody>
+    </table>
+    </div>
+</div>
+<script src="data.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+</body>
+</html>

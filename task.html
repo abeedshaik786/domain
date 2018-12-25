@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abeed-task</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
+</head>
+<body class="body-img">
+<nav class="navbar bg-dark  text-warning ">
+    <h1 class="navbar-brand m-auto font-weight-bold">TASK-WEB</h1>
+</nav>
+<section>
+    <div class="container p-5">
+        <div class="row">
+            <div class="">
+            <div class=" coll-md-8 oll-sm-8 oll-xl-8 oll-lg-8 col-10">
+                <div class=" " id="register-button">
+                    <h2 class="text-center text-warning pt-2">REGISTER</h2>
+                    <form class="p-5 text-secondary" onsubmit="event.preventDefault(); validate()" action="" name="vform">
+                        <div id="username_div">
+                            <label>USER NAME</label>
+                            <input class="form-control textinput" type="text" id="username" name="username">
+                            <div id="user_error"></div>
+                        </div>
+                        <div id="email_div">
+                            <label>EMAIL ID</label>
+                            <input class="form-control textinput" type="email" id="email" name="email">
+                            <div id="email_error"></div>
+                        </div>
+                        <div id="password_div">
+                            <label>PASSWORD</label>
+                            <input class="form-control textinput" type="password" id="password" name="password">
+                            <div id="password_error"></div>
+                        </div>
+                        <div id="conform_div">
+                            <label>CONFORMATION</label>
+                            <input class="form-control  textinput" type="password" id="conform-password" name="conform-password">
+                            <div id="conform-password_error"></div>
+                        </div>
+
+                        <input type="submit"class="btn  text-center btn-outline-primary m-3 bg-dark text-white" value="Register" name="Register">
+
+                        <a href="#" class=" navbar-toggler" data-target="#login" data-toggle="collapse">Login <i class="fa fa-sign-in"></i> </a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="coll-md-4 coll-sm-4 coll-xl-4 coll-lg-4 col-4 m-auto text-light  ">
+                <div class="login-border">
+                <h2 class="text-center font-weight-italic">Login Form</h2>
+            <form onsubmit=" event.preventDefault();validation();" name="login" autocomplete="off" class="text-primary">
+                <div>
+                    <label>UserNmae</label>
+                    <input class="form-control m-3" type="text" name="UserName">
+                    <div id="Username_error"></div>
+                </div>
+                <div >
+                    <label>Password</label>
+                    <input class="form-control m-3" type="password" name="Password">
+                    <div id="Pssword_error"></div>
+                </div>
+                <input type="submit" class="form-control m-3 bg-dark text-white" value="Login" id="ugfe">
+            </form>
+            <script type="text/javascript">
+                function validation() {
+                    let data1 = document.login.UserName.value;
+                    let data2 = document.login.Password.value;
+
+                    if(data1 == '' || data2 == ''){
+                        alert('please fill the both blocks')
+                    }
+                    else {
+                    if(data1 == 'user@gmail.com' & data2 == '123456') {
+                        window.open('success.html')
+                    }
+                    else{
+                        alert('please enter valid username and password')
+                        return
+                    }
+                }}
+            </script>
+        </div>
+            </div>
+    </div>
+    </div>
+</section>
+<script src="task.js"></script>
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+</body>
+</html>
